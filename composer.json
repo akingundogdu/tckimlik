@@ -1,0 +1,33 @@
+{
+	"name": "appocean/tckimlik",
+	"description": "TC Kimlik Numarası Kontrolü ve Doğrulaması",
+	"keywords": ["tc kimlik","tckn","tc","kimlik", "doğrulama","laravel","form","validation"],
+	"homepage": "https://github.com/appocean/tckimlik",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Akin Gundogdu",
+			"email": "akin-gundogdu@hotmail.com"
+		}
+	],
+	"autoload": {
+		"psr-4": {
+			"Appocean\\": "src/"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"Appocean\\Tests\\": "tests/"
+		}
+	},
+	"minimum-stability": "dev",
+	"require-dev": {
+		"orchestra/testbench": "^3.5"
+	},
+	"scripts": {
+		"test": [
+			"composer test:unit"
+		],
+		"test:unit": "phpunit --group Unit"
+	}
+}
